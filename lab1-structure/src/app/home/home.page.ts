@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(private alertController: AlertController, private navCtrl: NavController) {}
+  constructor(private alertController: AlertController,private router: Router) {}
 
   async presentAlert() {
     const alert = await this.alertController.create({
@@ -21,7 +21,7 @@ export class HomePage {
     await alert.present();
   }
 
-  goToAbout() {
-    this.navCtrl.navigateForward('/about');
+  goToAbout(){
+    this.router.navigate(['/about']);
   }
 }

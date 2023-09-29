@@ -1,17 +1,12 @@
-import { Component} from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.page.html',
   styleUrls: ['./about.page.scss'],
 })
-export class AboutPage  {
+export class AboutPage {
 
-  constructor(private navCtrl: NavController) { }
-
-  goToHome() {
-    this.navCtrl.navigateForward('/home');
-  }
+  constructor() { }
 
 }

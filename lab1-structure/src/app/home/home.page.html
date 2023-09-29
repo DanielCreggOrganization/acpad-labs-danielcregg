@@ -17,6 +17,16 @@
     <strong>This is my app.</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
     <ion-button expand="block" (click)="presentAlert()">Press me</ion-button>
-    <ion-button (click)="goToAbout()">Go to About Page</ion-button> 
+    
+    <!-- Navigate to the about page programitically using Angular Router API -->
+    <ion-button (click)="goToAbout()">Go to about page</ion-button>
+
+    <!-- Both the Angular Router API and the `routerLink` directive can be used to navigate between pages in an Ionic application, and they both have their advantages and disadvantages. 
+         The `routerLink` directive is a simple and easy-to-use way to navigate between pages in an Ionic application. It allows you to define the navigation path directly in the template, 
+         which can make it easier to read and understand the code. It also provides some built-in functionality, such as automatically adding the `href` attribute to the link element.
+         On the other hand, using the Angular Router API to navigate between pages gives you more control over the navigation process. You can navigate programmatically using the `navigate()` method,
+         which allows you to pass in additional parameters and options. This can be useful if you need to perform some additional logic before navigating, or if you need to pass data between pages.
+         In general, if you just need to navigate between pages in a simple Ionic application, the `routerLink` directive is a good choice. However, if you need more control over the navigation process, 
+         or if you need to perform some additional logic before navigating, using the Angular Router API may be a better choice.-->
   </div>
 </ion-content>

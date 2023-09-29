@@ -10,5 +10,6 @@
       <ion-title size="large">about</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button (click)="goToHome()">Go to Home Page</ion-button>
+  <!-- Add a button to navigate to the home page using routerLink directive -->
+  <ion-button [routerLink]="['/home']">Go to home page</ion-button>
 </ion-content>
