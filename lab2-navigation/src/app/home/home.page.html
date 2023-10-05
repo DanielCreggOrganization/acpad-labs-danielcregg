@@ -1,22 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button [routerLink]="['/test-page']">Go to test page</ion-button>
+  <ion-menu-toggle>
+    <ion-button>Click to close the menu</ion-button>
+  </ion-menu-toggle>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>This is the home page</strong>
-    <br>
-    <ion-button [routerLink]="['/test-page']"> Navigate to test page (routerLink) </ion-button>
-    <ion-button (click)="pushTestPageOnToStack()">Push Test Page on to stack</ion-button>
-  </div>
-</ion-content>
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Blank</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <div id="container">
+      <strong>This is the home page</strong>
+      <br>
+      <ion-button [routerLink]="['/test-page']"> Navigate to test page (routerLink) </ion-button>
+      <ion-button (click)="pushTestPageOnToStack()">Push Test Page on to stack</ion-button>
+    </div>
+  </ion-content>
