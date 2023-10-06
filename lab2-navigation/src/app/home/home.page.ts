@@ -7,7 +7,7 @@ import { Router} from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  text: string = '';
   constructor(private router: Router) {}
 
   // Push the 'Products' page onto the navigation stack

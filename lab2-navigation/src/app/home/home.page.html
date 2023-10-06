@@ -30,8 +30,11 @@
     <div id="container">
       <strong>This is the home page!</strong>
       <br>
-      <ion-button [routerLink]="['/products']">Navigate to products page with routerLink</ion-button>
+      <ion-button [routerLink]="['/products', {text: text}]">Navigate to products page with routerLink</ion-button>
       <br>
       <ion-button (click)="pushProductsPageOnToStack()">Push Products Page on to Stack</ion-button>
+      <ion-item>
+        <ion-input fill="solid" label="Enter your name here: " [(ngModel)]="text"></ion-input>
+      </ion-item>
     </div>
   </ion-content>
