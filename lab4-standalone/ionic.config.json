@@ -1,7 +1,0 @@
-{
-  "name": "lab4-standalone",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}

@@ -1,7 +1,0 @@
-{
-  "name": "lab4-ngmodules",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
